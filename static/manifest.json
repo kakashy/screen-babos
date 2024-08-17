@@ -1,0 +1,8 @@
+{
+	"name": "Screen Babos",
+	"short_name": "Babos",
+	"theme_color": "#062331",
+	"start_url": ".",
+	"display": "standalone",
+	"background_color": "#062331"
+}
