@@ -7,11 +7,14 @@
 	import { fly } from 'svelte/transition';
 	import { goto } from '$app/navigation';
 </script>
-<svelte:head>
-    <title>Sign In - Screen Babos</title>
-    <meta name="description" content="Sign in to Screen Babos for a chance to win a limited slot of time on our shared server.">
-</svelte:head>
 
+<svelte:head>
+	<title>Sign In - Screen Babos</title>
+	<meta
+		name="description"
+		content="Sign in to Screen Babos for a chance to win a limited slot of time on our shared server."
+	/>
+</svelte:head>
 
 <main class="relative flex min-h-screen flex-col">
 	<div class="blob-c">
@@ -20,9 +23,9 @@
 	</div>
 	<span class="mt-9 flex w-full items-center justify-between p-6"
 		><a href="/"><ChevronLeft /></a>
-		<p  in:fly={{ y: 10, duration: 300 }} class="mx-auto">Login</p></span
+		<p in:fly={{ y: 10, duration: 300 }} class="mx-auto">Login</p></span
 	>
-	<article class="mt-1 flex flex-col gap-5 p-6 max-w-3xl mx-auto">
+	<article class="mx-auto mt-1 flex max-w-3xl flex-col gap-5 p-6">
 		<h1 in:fly={{ y: 20, duration: 500 }} class="font-['Space_Grotesk'] text-2xl font-bold">
 			Welcome Back!
 		</h1>
@@ -60,7 +63,7 @@
 	}
 
 	.shape-blob {
-		background: #E0FFDD;
+		background: #e0ffdd;
 		height: 300px;
 		width: 300px;
 		left: 400px;
@@ -73,7 +76,7 @@
 			movement_two 20s ease-in-out infinite both;
 	}
 	.shape-blob.one {
-		background: #E0FFDD;
+		background: #e0ffdd;
 		height: 80vh;
 		width: 80vh;
 		top: 55vh;
@@ -85,7 +88,7 @@
 			movement_two 20s ease-in-out infinite both;
 	}
 	.two {
-		background: #E0FFDD;
+		background: #e0ffdd;
 		height: 60vh;
 		width: 60vh;
 		left: -20vh;

@@ -16,14 +16,28 @@
 		<div class="shape-blob one"></div>
 		<div class="shape-blob two"></div>
 	</div>
-    <img in:scale={{ duration: 500}} src="https://images.unsplash.com/photo-1542321888-8a6abb3ec824?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Man holding a phone" class='rounded-full object-cover w-28 h-28 absolute left-2/3 top-[10vh] md:w-60 md:h-60 lg:w-80 lg:h-80'>
-    <img in:scale={{ duration: 500}} src="/img/lisa-marie-theck-PF6JfGfmqOI-unsplash.jpg" alt="a woman sitting on a couch looking at her cell phone. This is by Lisa Marie Theck on Unsplash" class='rounded-full object-cover w-44 h-44 absolute left-1/3 top-[25vh] md:w-60 md:h-60 lg:w-80 lg:h-80'>
-	<article class="mt-auto p-5 flex flex-col gap-3 max-w-2xl mx-auto">
-		<h1 in:fly={{ y: 20, duration: 500 }} class="w-2/3 font-['Space_Grotesk'] text-2xl font-bold">Crypto Payments made Easy</h1>
-		<p in:fade={{ duration: 400, delay: 200 }} class="text-lg">Make payments for your day to day purchases directly from your wallet</p>
+	<img
+		in:scale={{ duration: 500 }}
+		src="https://images.unsplash.com/photo-1542321888-8a6abb3ec824?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+		alt="Man holding a phone"
+		class="absolute left-2/3 top-[10vh] h-28 w-28 rounded-full object-cover md:h-60 md:w-60 lg:h-80 lg:w-80"
+	/>
+	<img
+		in:scale={{ duration: 500 }}
+		src="/img/lisa-marie-theck-PF6JfGfmqOI-unsplash.jpg"
+		alt="a woman sitting on a couch looking at her cell phone. This is by Lisa Marie Theck on Unsplash"
+		class="absolute left-1/3 top-[25vh] h-44 w-44 rounded-full object-cover md:h-60 md:w-60 lg:h-80 lg:w-80"
+	/>
+	<article class="mx-auto mt-auto flex max-w-2xl flex-col gap-3 p-5">
+		<h1 in:fly={{ y: 20, duration: 500 }} class="w-2/3 font-['Space_Grotesk'] text-2xl font-bold">
+			Crypto Payments made Easy
+		</h1>
+		<p in:fade={{ duration: 400, delay: 200 }} class="text-lg">
+			Make payments for your day to day purchases directly from your wallet
+		</p>
 		<a href="/signin" class="my-10">
-            <Button class="w-full">Get Started</Button>
-        </a>
+			<Button class="w-full">Get Started</Button>
+		</a>
 	</article>
 </main>
 
@@ -33,7 +47,7 @@
 		overflow: hidden;
 		position: absolute;
 		width: 100%;
-		filter: blur( 0px);
+		filter: blur(0px);
 		z-index: -1;
 		/*   background: rgba(255,255,255,0.1) */
 	}
@@ -46,7 +60,7 @@
 		top: 0px;
 		border-radius: 100%;
 		transform: rotate(-180deg);
-        position: absolute;
+		position: absolute;
 		animation:
 			transform 8s ease-in-out infinite both alternate,
 			movement_two 20s ease-in-out infinite both;
@@ -56,7 +70,7 @@
 		height: 60vh;
 		width: 60vh;
 		top: 1vh;
-        left: 60vw;
+		left: 60vw;
 		border-radius: 100%;
 		transform: rotate(-180deg);
 		animation:
@@ -75,31 +89,31 @@
 			transform 8s ease-in-out infinite both alternate,
 			movement_two 20s ease-in-out infinite both;
 	}
-    .lite {
-        z-index: 1;
-        background-color: #ffffff20;
-        width: 80px;
-        height:80px;
-        animation: movement_one 20s ease-in-out infinite both;
-    }
-    .mosi {
-        top: -40px;
-        left: 30vw;
-        width: 80px;
-        height: 80px;
-    }
-    .mbwegze {
-        top: 25vh;
-        left: 50vw;
-        width: 30px;        
-        height: 30px;        
-    }
-    .tuta {
-        top: 5vh;
-        left: 70vw;
-        width: 50px;        
-        height: 50px;        
-    }
+	.lite {
+		z-index: 1;
+		background-color: #ffffff20;
+		width: 80px;
+		height: 80px;
+		animation: movement_one 20s ease-in-out infinite both;
+	}
+	.mosi {
+		top: -40px;
+		left: 30vw;
+		width: 80px;
+		height: 80px;
+	}
+	.mbwegze {
+		top: 25vh;
+		left: 50vw;
+		width: 30px;
+		height: 30px;
+	}
+	.tuta {
+		top: 5vh;
+		left: 70vw;
+		width: 50px;
+		height: 50px;
+	}
 
 	@keyframes transform {
 		/* 0%,
